@@ -15,6 +15,7 @@
 !/tmp/tests/empty
 .git/*
 /.git/*
+/git/*
 /logs/*
 !/logs/empty
 
@@ -25,4 +26,4 @@
 /app/Config/database.php
 /vendors/*
 .git/*
-/.git/*
+/git/*
