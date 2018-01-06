@@ -1,5 +1,5 @@
 <?php
-	$this->assign('title','CMO | Convenios');
+	$this->assign('title','CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO | Convenios');
 	$this->assign('nav','convenios');
 
 	$this->display('_Header.tpl.php');
@@ -34,10 +34,10 @@
 		<table class="collection table table-bordered table-hover">
 		<thead>
 			<tr>
-				<th id="header_Idconvenio">Idconvenio<% if (page.orderBy == 'Idconvenio') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_NmConvenio">Nm Convenio<% if (page.orderBy == 'NmConvenio') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_DtInicio">Dt Inicio<% if (page.orderBy == 'DtInicio') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_DsRegioes">Ds Regioes<% if (page.orderBy == 'DsRegioes') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Idconvenio">Código<% if (page.orderBy == 'Idconvenio') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_NmConvenio">Convênio<% if (page.orderBy == 'NmConvenio') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_DtInicio">Inicio<% if (page.orderBy == 'DtInicio') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_DsRegioes">Regioes<% if (page.orderBy == 'DsRegioes') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -67,26 +67,26 @@
 					</div>
 				</div>
 				<div id="nmConvenioInputContainer" class="control-group">
-					<label class="control-label" for="nmConvenio">Nm Convenio</label>
+					<label class="control-label" for="nmConvenio">Convenio</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="nmConvenio" placeholder="Nm Convenio" value="<%= _.escape(item.get('nmConvenio') || '') %>">
+						<input type="text" class="input-xlarge" id="nmConvenio" placeholder="Nome do Convenio" value="<%= _.escape(item.get('nmConvenio') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="dtInicioInputContainer" class="control-group">
-					<label class="control-label" for="dtInicio">Dt Inicio</label>
+					<label class="control-label" for="dtInicio">Inicio</label>
 					<div class="controls inline-inputs">
-						<div class="input-append date date-picker" data-date-format="yyyy-mm-dd">
-							<input id="dtInicio" type="text" value="<%= _date(app.parseDate(item.get('dtInicio'))).format('YYYY-MM-DD') %>" />
+						<div class="input-append date date-picker" data-date-format="dd-mm-yyyy">
+							<input id="dtInicio" type="text" value="<%= _date(app.parseDate(item.get('dtInicio'))).format('DD-MM-YYYY') %>" />
 							<span class="add-on"><i class="icon-calendar"></i></span>
 						</div>
 						<span class="help-inline"></span>
 					</div>
 				</div>
 				<div id="dsRegioesInputContainer" class="control-group">
-					<label class="control-label" for="dsRegioes">Ds Regioes</label>
+					<label class="control-label" for="dsRegioes">Regioes</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="dsRegioes" placeholder="Ds Regioes" value="<%= _.escape(item.get('dsRegioes') || '') %>">
+						<input type="text" class="input-xlarge" id="dsRegioes" placeholder="Regioões de atendimento" value="<%= _.escape(item.get('dsRegioes') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
@@ -99,10 +99,10 @@
 				<div class="control-group">
 					<label class="control-label"></label>
 					<div class="controls">
-						<button id="deleteConvenioButton" class="btn btn-mini btn-danger"><i class="icon-trash icon-white"></i> Delete Convenio</button>
+						<button id="deleteConvenioButton" class="btn btn-mini btn-danger"><i class="icon-trash icon-white"></i> Delete Convênio</button>
 						<span id="confirmDeleteConvenioContainer" class="hide">
-							<button id="cancelDeleteConvenioButton" class="btn btn-mini">Cancel</button>
-							<button id="confirmDeleteConvenioButton" class="btn btn-mini btn-danger">Confirm</button>
+							<button id="cancelDeleteConvenioButton" class="btn btn-mini">Cancela</button>
+							<button id="confirmDeleteConvenioButton" class="btn btn-mini btn-danger">Confirma</button>
 						</span>
 					</div>
 				</div>
@@ -115,7 +115,7 @@
 		<div class="modal-header">
 			<a class="close" data-dismiss="modal">&times;</a>
 			<h3>
-				<i class="icon-edit"></i> Edit Convenio
+				<i class="icon-edit"></i> Editar Convênio
 				<span id="modelLoader" class="loader progress progress-striped active"><span class="bar"></span></span>
 			</h3>
 		</div>
@@ -124,8 +124,8 @@
 			<div id="convenioModelContainer"></div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn" data-dismiss="modal" >Cancel</button>
-			<button id="saveConvenioButton" class="btn btn-primary">Save Changes</button>
+			<button class="btn" data-dismiss="modal" >Cancela</button>
+			<button id="saveConvenioButton" class="btn btn-primary">Salvar Alterações</button>
 		</div>
 	</div>
 
@@ -135,7 +135,7 @@
 	</div>
 
 	<p id="newButtonContainer" class="buttonContainer">
-		<button id="newConvenioButton" class="btn btn-primary">Add Convenio</button>
+		<button id="newConvenioButton" class="btn btn-primary">Adicionar Convênio</button>
 	</p>
 
 </div> <!-- /container -->

@@ -1,6 +1,6 @@
 <?php
 /**
- * @package CMO
+ * @package CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO
  *
  * APPLICATION-WIDE CONFIGURATION SETTINGS
  *

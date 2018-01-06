@@ -1,6 +1,6 @@
 <?php
 /**
- * @package CMO
+ * @package CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO
  *
  * MACHINE-SPECIFIC CONFIGURATION SETTINGS
  *
@@ -25,7 +25,7 @@ GlobalConfig::$CONNECTION_SETTING->Charset = "utf8";
 GlobalConfig::$CONNECTION_SETTING->Multibyte = true;
 // GlobalConfig::$CONNECTION_SETTING->BootstrapSQL = "SET SQL_BIG_SELECTS=1";
 
-/** the root url of the application with trailing slash, for example http://localhost/cmo/ */
+/** the root url of the application with trailing slash, for example http://localhost/consultório médico e odontológico - cmo/ */
 GlobalConfig::$ROOT_URL = RequestUtil::GetServerRootUrl() . 'cmo/';
 
 /** timezone */

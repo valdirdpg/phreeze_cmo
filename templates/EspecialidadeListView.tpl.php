@@ -1,5 +1,5 @@
 <?php
-	$this->assign('title','CMO | Especialidades');
+	$this->assign('title','CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO | Especialidades');
 	$this->assign('nav','especialidades');
 
 	$this->display('_Header.tpl.php');
@@ -34,8 +34,8 @@
 		<table class="collection table table-bordered table-hover">
 		<thead>
 			<tr>
-				<th id="header_Idespecialidades">Idespecialidades<% if (page.orderBy == 'Idespecialidades') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
-				<th id="header_DsEspecialidades">Ds Especialidades<% if (page.orderBy == 'DsEspecialidades') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_Idespecialidades">Código<% if (page.orderBy == 'Idespecialidades') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
+				<th id="header_DsEspecialidades">Especialidades<% if (page.orderBy == 'DsEspecialidades') { %> <i class='icon-arrow-<%= page.orderDesc ? 'up' : 'down' %>' /><% } %></th>
 			</tr>
 		</thead>
 		<tbody>
@@ -63,9 +63,9 @@
 					</div>
 				</div>
 				<div id="dsEspecialidadesInputContainer" class="control-group">
-					<label class="control-label" for="dsEspecialidades">Ds Especialidades</label>
+					<label class="control-label" for="dsEspecialidades">Especialidades</label>
 					<div class="controls inline-inputs">
-						<input type="text" class="input-xlarge" id="dsEspecialidades" placeholder="Ds Especialidades" value="<%= _.escape(item.get('dsEspecialidades') || '') %>">
+						<input type="text" class="input-xlarge" id="dsEspecialidades" placeholder="Nome da Especialidade" value="<%= _.escape(item.get('dsEspecialidades') || '') %>">
 						<span class="help-inline"></span>
 					</div>
 				</div>
@@ -80,8 +80,8 @@
 					<div class="controls">
 						<button id="deleteEspecialidadeButton" class="btn btn-mini btn-danger"><i class="icon-trash icon-white"></i> Delete Especialidade</button>
 						<span id="confirmDeleteEspecialidadeContainer" class="hide">
-							<button id="cancelDeleteEspecialidadeButton" class="btn btn-mini">Cancel</button>
-							<button id="confirmDeleteEspecialidadeButton" class="btn btn-mini btn-danger">Confirm</button>
+							<button id="cancelDeleteEspecialidadeButton" class="btn btn-mini">Cancelar</button>
+							<button id="confirmDeleteEspecialidadeButton" class="btn btn-mini btn-danger">Confirmar</button>
 						</span>
 					</div>
 				</div>
@@ -94,7 +94,7 @@
 		<div class="modal-header">
 			<a class="close" data-dismiss="modal">&times;</a>
 			<h3>
-				<i class="icon-edit"></i> Edit Especialidade
+				<i class="icon-edit"></i> Editar Especialidade
 				<span id="modelLoader" class="loader progress progress-striped active"><span class="bar"></span></span>
 			</h3>
 		</div>
@@ -103,8 +103,8 @@
 			<div id="especialidadeModelContainer"></div>
 		</div>
 		<div class="modal-footer">
-			<button class="btn" data-dismiss="modal" >Cancel</button>
-			<button id="saveEspecialidadeButton" class="btn btn-primary">Save Changes</button>
+			<button class="btn" data-dismiss="modal" >Cancelar</button>
+			<button id="saveEspecialidadeButton" class="btn btn-primary">Salvar Alterações</button>
 		</div>
 	</div>
 
@@ -114,7 +114,7 @@
 	</div>
 
 	<p id="newButtonContainer" class="buttonContainer">
-		<button id="newEspecialidadeButton" class="btn btn-primary">Add Especialidade</button>
+		<button id="newEspecialidadeButton" class="btn btn-primary">Adicionar Especialidade</button>
 	</p>
 
 </div> <!-- /container -->

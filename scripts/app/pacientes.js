@@ -286,7 +286,7 @@ var page = {
 			'cdConvenio': $('input#cdConvenio').val(),
 			'cdLaudo': $('input#cdLaudo').val(),
 			'cdProntuario': $('input#cdProntuario').val(),
-			'idade': $('input#idade').val()
+			'Idade': $('input#Idade').val()
 		}, {
 			wait: true,
 			success: function(){

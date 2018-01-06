@@ -1,5 +1,5 @@
 <?php
-/** @package    CMO */
+/** @package    CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO */
 
 /* GlobalConfig object contains all configuration information for the app */
 include_once("_global_config.php");

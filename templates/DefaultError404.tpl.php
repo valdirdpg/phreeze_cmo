@@ -1,5 +1,5 @@
 <?php
-	$this->assign('title','CMO | File Not Found');
+	$this->assign('title','CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO | File Not Found');
 	$this->assign('nav','home');
 
 	$this->display('_Header.tpl.php');

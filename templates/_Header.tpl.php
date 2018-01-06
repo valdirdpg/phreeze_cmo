@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="br">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-Frame-Options" content="deny">
 		<base href="<?php $this->eprint($this->ROOT_URL); ?>" />
 		<title><?php $this->eprint($this->title); ?></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta name="description" content="CMO" />
+		<meta name="description" content="CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO" />
 		<meta name="author" content="phreeze builder | phreeze.com" />
 
 		<!-- Le styles -->
@@ -59,13 +59,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</a>
-						<a class="brand" href="./">CMO</a>
+						<a class="brand" href="./pacientes">CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO</a>
 						<div class="nav-collapse collapse">
 							<ul class="nav">
 								<li <?php if ($this->nav=='convenios') { echo 'class="active"'; } ?>><a href="./convenios">Convenios</a></li>
 								<li <?php if ($this->nav=='especialidades') { echo 'class="active"'; } ?>><a href="./especialidades">Especialidades</a></li>
 								<li <?php if ($this->nav=='medicos') { echo 'class="active"'; } ?>><a href="./medicos">Medicos</a></li>
 								<li <?php if ($this->nav=='pacientes') { echo 'class="active"'; } ?>><a href="./pacientes">Pacientes</a></li>
+								<li <?php if ($this->nav=='ficha') { echo 'class="active"'; } ?>><a href="pdf.php">Imprimir Ficha</a></li>
 								</ul>
 								</li>
 							</ul>

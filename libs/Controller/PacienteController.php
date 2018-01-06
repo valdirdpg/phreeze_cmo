@@ -1,5 +1,5 @@
 <?php
-/** @package    CMO::Controller */
+/** @package    CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO::Controller */
 
 /** import supporting libraries */
 require_once("AppBaseController.php");
@@ -10,7 +10,7 @@ require_once("Model/Paciente.php");
  * controller is responsible for processing input from the user, reading/updating
  * the model as necessary and displaying the appropriate view.
  *
- * @package CMO::Controller
+ * @package CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO::Controller
  * @author ClassBuilder
  * @version 1.0
  */
@@ -175,7 +175,7 @@ class PacienteController extends AppBaseController
 			$paciente->CdConvenio = $this->SafeGetVal($json, 'cdConvenio');
 			$paciente->CdLaudo = $this->SafeGetVal($json, 'cdLaudo');
 			$paciente->CdProntuario = $this->SafeGetVal($json, 'cdProntuario');
-			$paciente->Idade = $this->SafeGetVal($json, 'idade');
+			$paciente->Idade = $this->SafeGetVal($json, 'Idade');
 
 			$paciente->Validate();
 			$errors = $paciente->GetValidationErrors();
@@ -242,7 +242,7 @@ class PacienteController extends AppBaseController
 			$paciente->CdConvenio = $this->SafeGetVal($json, 'cdConvenio', $paciente->CdConvenio);
 			$paciente->CdLaudo = $this->SafeGetVal($json, 'cdLaudo', $paciente->CdLaudo);
 			$paciente->CdProntuario = $this->SafeGetVal($json, 'cdProntuario', $paciente->CdProntuario);
-			$paciente->Idade = $this->SafeGetVal($json, 'idade', $paciente->Idade);
+			$paciente->Idade = $this->SafeGetVal($json, 'Idade', $paciente->Idade);
 
 			$paciente->Validate();
 			$errors = $paciente->GetValidationErrors();

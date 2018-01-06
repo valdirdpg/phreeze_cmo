@@ -1,5 +1,5 @@
 <?php
-	$this->assign('title','CMO');
+	$this->assign('title','CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO');
 	$this->assign('nav','home');
 
 	$this->display('_Header.tpl.php');

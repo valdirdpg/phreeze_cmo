@@ -1,5 +1,5 @@
 /**
- * backbone model definitions for CMO
+ * backbone model definitions for CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO
  */
 
 /**
@@ -247,7 +247,7 @@ model.PacienteModel = Backbone.Model.extend({
 	cdConvenio: '',
 	cdLaudo: '',
 	cdProntuario: '',
-	idade: '',
+	Idade: '',
 	defaults: {
 		'idpacientes': null,
 		'nmPaciente': '',
@@ -272,7 +272,7 @@ model.PacienteModel = Backbone.Model.extend({
 		'cdConvenio': '',
 		'cdLaudo': '',
 		'cdProntuario': '',
-		'idade': ''
+		'Idade': ''
 	}
 });
 
