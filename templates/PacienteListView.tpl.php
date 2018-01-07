@@ -67,7 +67,7 @@
 			<tr id="<%= _.escape(item.get('idpacientes')) %>">
 				<td><%= _.escape(item.get('idpacientes') || '') %></td>
 				<td><%= _.escape(item.get('nmPaciente') || '') %></td>
-				<td><%if (item.get('dtNascimento')) { %><%= _date(app.parseDate(item.get('dtNascimento'))).format('MMM D, YYYY') %><% } else { %>NULL<% } %></td>
+				<td><%if (item.get('dtNascimento')) { %><%= _date(app.parseDate(item.get('dtNascimento'))).format('D MMM , YYYY') %><% } else { %>NULL<% } %></td>
 				<td><%= _.escape(item.get('sexo') || '') %></td>
 				<td><%= _.escape(item.get('cpf') || '') %></td>
 <!-- UNCOMMENT TO SHOW ADDITIONAL COLUMNS
@@ -120,7 +120,7 @@
 				<div id="dtNascimentoInputContainer" class="control-group">
 					<label class="control-label" for="dtNascimento">Dt Nascimento</label>
 					<div class="controls inline-inputs">
-						<div class="input-append date date-picker" data-date-format="dd-mm-yyyy">
+						<div class="input-append date " data-date-format="dd-mm-yyyy">
 							<input id="dtNascimento" type="text" value="<%= _date(app.parseDate(item.get('dtNascimento'))).format('DD-MM-YYYY') %>" />
 							<span class="add-on"><i class="icon-calendar"></i></span>
 						</div>

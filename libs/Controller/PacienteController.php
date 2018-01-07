@@ -154,7 +154,7 @@ class PacienteController extends AppBaseController
 			// $paciente->Idpacientes = $this->SafeGetVal($json, 'idpacientes');
 
 			$paciente->NmPaciente = $this->SafeGetVal($json, 'nmPaciente');
-			$paciente->DtNascimento = date('Y-m-d H:i:s',strtotime($this->SafeGetVal($json, 'dtNascimento')));
+			$paciente->DtNascimento = date('d-m-Y H:i:s',strtotime($this->SafeGetVal($json, 'dtNascimento')));
 			$paciente->Sexo = $this->SafeGetVal($json, 'sexo');
 			$paciente->Cpf = $this->SafeGetVal($json, 'cpf');
 			$paciente->Rg = $this->SafeGetVal($json, 'rg');
