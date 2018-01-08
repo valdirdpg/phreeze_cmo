@@ -59,14 +59,14 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</a>
-						<a class="brand" href="./pacientes">CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO</a>
+						<a class="brand" href="./">CONSULTÓRIO MÉDICO E ODONTOLÓGICO - CMO</a>
 						<div class="nav-collapse collapse">
 							<ul class="nav">
 								<li <?php if ($this->nav=='convenios') { echo 'class="active"'; } ?>><a href="./convenios">Convenios</a></li>
 								<li <?php if ($this->nav=='especialidades') { echo 'class="active"'; } ?>><a href="./especialidades">Especialidades</a></li>
 								<li <?php if ($this->nav=='medicos') { echo 'class="active"'; } ?>><a href="./medicos">Medicos</a></li>
 								<li <?php if ($this->nav=='pacientes') { echo 'class="active"'; } ?>><a href="./pacientes">Pacientes</a></li>
-								<li <?php if ($this->nav=='ficha') { echo 'class="active"'; } ?>><a href="pdf.php">Imprimir Ficha</a></li>
+								<li <?php if ($this->nav=='ficha') { echo 'class="active"'; } ?>><a href="./">Imprimir Ficha</a></li>
 								</ul>
 								</li>
 							</ul>
